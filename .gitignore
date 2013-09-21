@@ -33,3 +33,15 @@ nosetests.xml
 .mr.developer.cfg
 .project
 .pydevproject
+
+# Videos
+*.webm
+*.mp4
+*.ogv
+*.mpeg
+*.wmv
+*.mkv
+*.avi
+
+# Logs
+*.log
