@@ -9,13 +9,13 @@ Ideally this gets set up with some sort of file monitoring daemon.  On OS X I us
 
 Requirements
 ------------
-ffmpeg (git)
-Python 2.7
+ - ffmpeg (git)
+ - Python 2.7
 
-Reccomended
+Recomended
 ------------
-s3cmd (git)
-Hazel or watcher.py
+ - s3cmd (git)
+ - Hazel or watcher.py
 
 Configuration
 ------------
