@@ -43,5 +43,16 @@ nosetests.xml
 *.mkv
 *.avi
 
+# Audio
+*.aac
+*.m4a
+*.mp3
+*.wav
+*.aiff
+*.aif
+*.ogg
+*.flac
+*.alac
+
 # Logs
 *.log
