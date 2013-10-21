@@ -37,6 +37,7 @@ presets = { "mp4_high" : "${ffmpeg} -threads ${t} -i ${source} -s hd720 -vcodec 
             "webm_high" : "${ffmpeg} -threads ${t} -i ${source} -s hd720 -vcodec libvpx -g 120 -lag-in-frames 16 -deadline good -cpu-used 0 -vprofile 0 -qmax 51 -qmin 11 -slices 4 -b:v 2M -acodec libvorbis -ab 192k -f webm ${dest}/${filename}.webm",
             "ogv_high" : "${ffmpeg} -threads ${t} -i ${source} -codec:v libtheora -qscale:v 7 -codec:a libvorbis -qscale:a 6 ${dest}/${filename}.ogv",
             "aac_low" : "${ffmpeg} -threads ${t} -i ${source} -vn -acodec libfaac -ab 96k -ac 1 -ar 44100 ${dest}/${filename}.m4a",
+            "snapshots" : "${ffmpeg} -i ${source} -f image2 -vf fps=fps=1/600 ${dest}/${filename}-thumb%04d.png
             }
 '''
 The following variables get converted to fill in the above templates
